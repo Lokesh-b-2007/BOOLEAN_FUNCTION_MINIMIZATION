@@ -1,9 +1,5 @@
-NAME : Lokesh B
 
-REG NO : 24900370
-
-EXPERIMENT 2 : IMPLEMENTATION OF BOOLEAN_FUNCTION_MINIMIZATION
-
+BOOLEAN_FUNCTION_MINIMIZATION
 AIM:
 
 To implement the given logic function verify its operation in Quartus using Verilog programming.
@@ -18,7 +14,8 @@ Hardware – PCs, Cyclone II , USB flasher
 
 Software – Quartus prime
 
-PROCEDURE
+Theory  ![426922546-e95b143e-8dca-4431-9f51-7585f5e1c0b0](https://github.com/user-attachments/assets/35958aa7-10b9-47d8-b4f7-c348f0439ba4)
+
 
 Type the program in Quartus software.
 
@@ -30,31 +27,42 @@ Create nodes for inputs and outputs to generate the timing diagram.
 
 For different input combinations generate the timing diagram.
 
-PROGRAM:
+Program:
+Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
+
+Developed by: Lokesh B reg.no:-212224040172
+~~~
+module ex2(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b&~d)|(~a&b&d)|(a&b&~c));
+endmodule
+module ex2_2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2= ((~y&z)|(w&z)|(x&y)|(w&y&~z));
+endmodule
+~~~
+RTL realization
+
+1-a)
+![426923015-649cc145-ba52-4298-9cb6-2fca77af9897](https://github.com/user-attachments/assets/f57bf1f0-0d14-4dda-9a0d-0eb3d059fbe6)
 
 
-![388373357-6335030a-aa19-493c-aa7c-caa2f9d18bc4](https://github.com/user-attachments/assets/55a8dfad-be63-48b6-b047-67f4b4cd8b93)
+1-b)
+![426923460-3854152f-2b1d-4a1b-8497-9a9fe5771b17](https://github.com/user-attachments/assets/29b4549c-d87f-4911-aa0d-d0523ffb213a)
 
 
+Timing Diagram
 
-TRUTH TABLE
-
-
-![388376335-180440d0-631d-45bf-a85a-4508c9f41e65](https://github.com/user-attachments/assets/a237e588-ca65-4637-aed0-d29d0242d52e)
-
-
-![388376653-e7443311-e06d-405a-9194-a60e492f0585](https://github.com/user-attachments/assets/54e8063a-458a-4c12-b76d-ce7dcb809247)
+2-a)
+![426923986-0b3f910e-0f1f-43c2-a9dc-9c663001e820](https://github.com/user-attachments/assets/65601282-72f1-453e-87d9-b844f97aa501)
 
 
-RTL REALIZATION
-
-![388373320-d2fe1b17-ec84-43fa-b3be-3e47c39543f7](https://github.com/user-attachments/assets/dfdad566-a88a-4916-97b5-ee23b5f81c4b)
-
-
-TIMING DIAGRAM 
-![388373263-77517132-8223-49b6-bad0-8941a4c7875a](https://github.com/user-attachments/assets/3e2e515a-52a1-49f3-b1a1-69467d920ef7)
+2-b)
+![426926401-7aa0b28d-f3cb-4b51-b518-c08af29634a1](https://github.com/user-attachments/assets/047de71d-893f-4a62-99d3-74ce0837b064)
 
 
-RESULT
+Result:
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
